@@ -78,6 +78,7 @@ Then:
     git submodule update
     autoreconf -i
     CFLAGS="-O2 -Wall -march=native -std=gnu99" ./configure <options>
+    ( CPPFLAGS="-O2 -Wall -march=native -std=c++98 -I/home/nicolasluo/AMDAPPSDK/include" LDFLAGS="-L/usr/lib" ./configure)
     make
 
 To compile a version that can be used accross machines, remove
